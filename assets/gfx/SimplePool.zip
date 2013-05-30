@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<!--
+	   ___      ___              ___                __                                                            
+	 /'___\ __ /\_ \           /'___\              /\ \__                                                         
+	/\ \__//\_\\//\ \      __ /\ \__/   __      ___\ \ ,_\   ___   _ __   __  __        ___    ___     ___ ___    
+	\ \ ,__\/\ \ \ \ \   /'__`\ \ ,__\/'__`\   /'___\ \ \/  / __`\/\`'__\/\ \/\ \      /'___\ / __`\ /' __` __`\  
+	 \ \ \_/\ \ \ \_\ \_/\  __/\ \ \_/\ \L\.\_/\ \__/\ \ \_/\ \L\ \ \ \/ \ \ \_\ \  __/\ \__//\ \L\ \/\ \/\ \/\ \ 
+	  \ \_\  \ \_\/\____\ \____\\ \_\\ \__/.\_\ \____\\ \__\ \____/\ \_\  \/`____ \/\_\ \____\ \____/\ \_\ \_\ \_\
+	   \/_/   \/_/\/____/\/____/ \/_/ \/__/\/_/\/____/ \/__/\/___/  \/_/   `/___/> \/_/\/____/\/___/  \/_/\/_/\/_/
+        	                                                                  /\___/                              
+                	                                                          \/__/                               
+
+	Welcome to FileFactory.com.  If you want to mirror files onto our site you can find some very basic PHP sample 
+	code we've created by grabbing the following .zip - http://www.filefactory.com/tool/uploadExample.zip
+
+	The sample code is slightly outdated as of April 2012 - but will still function correctly.
+	
+	If you do run into issues, feel free to send our support team an email
+	
+	Other than that, we hope you enjoy utilizing our service.
+-->
+
+
+<!--[if lt IE 7]> <html lang="en-us" class="no-js lt-ie9 lt-ie8 lt-ie7 bad-browser"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="no-js lt-ie9 lt-ie8 bad-browser"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" class="no-js"> <!--<![endif]-->
+
+<head>
+	<title>File Not Found - Filefactory.com</title>
+	<meta charset="utf-8">
+	<meta name="verify-v1" content="dpE1+tPZDHhp5ftYFue67Jx6oezN6//+0A+NA9qIDKU=" />
+	<meta name="webmoney.attestation.label" content="webmoney attestation label#8769E121-81B0-4F8C-A121-8777C31BAC4F" />
+	<meta name="robots" content="noodp" />
+	<meta name="googlebot" content="noodp" />
+		<meta name="keywords" content="file, sharing, file sharing, software file sharing, hosting, file hosting, free file hosting, files hosting, file share, free file sharing, online storage, free online storage, file online storage, file upload, files upload, upload, file storage, file host, free hosting, image hosting" />
+	<meta name="description" content="FileFactory is the easiest way to host any file in the cloud. Upload and share files up to 2GB. Get unlimited downloads with a Premium account." />
+		
+	<link rel="shortcut icon" href="/favicon.ico"/> 
+	
+	<link rel="stylesheet" type="text/css" href="http://cdn.filefactory.com/css/site.css?v=164011072012" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.filefactory.com/css/bouncebox.css?v=164011072012" />
+	
+	<link rel="stylesheet" type="text/css" href="http://cdn.filefactory.com/css/new/css_menu.css?v=164011072012" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.filefactory.com/css/new/css_alerts.css?v=164011072012" />
+
+	<!--	<link rel="stylesheet" type="text/css" href="http://cdn.filefactory.com/common/webfonts/ss-symbolicons-block.css" /> -->
+	<link rel="stylesheet" type="text/css" href="/common/webfonts/ss-symbolicons-block.css" />
+
+	
+					<link rel="stylesheet" type="text/css" href="http://cdn.filefactory.com/css/new/css_style.css?v=164011072012" />
+				<link rel="stylesheet" type="text/css" href="http://cdn.filefactory.com/css/new/css_file.css?v=164011072012" />
+				<link rel="stylesheet" type="text/css" href="http://cdn.filefactory.com/css/new/apprise-v2.min.css?v=164011072012" />
+				
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="http://cdn.filefactory.com/css/new/css_ie7fix.css?v=164011072012" /><![endif]-->
+	
+	<!-- modernizer -->
+	<script src="http://cdn.filefactory.com/js/modernizr-2.0.6.min.js"></script>
+	
+	<!-- jQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+	<script>window.jQuery || document.write('<script src="http://cdn.filefactory.com/js/jquery/jquery-1.7.1.min.js"><\/script>')</script>	
+		
+		
+	<!-- Check for IE6 (used to disable the login dropdown) -->
+	<script type="text/javascript">
+		isLTEie6 = false;
+	</script>
+	<!-- End IE6 check -->
+
+	<!-- Alexa -->
+	<!-- Ijh_P22-nItmzlLZZB-nNcZV8O0 -->
+	
+	<!-- Bouncebox -->
+	<script type="text/javascript">
+		$(function(){
+			if ($("#box").length)
+			{
+				$('#box').bounceBox();
+				$('#box').bounceBoxToggle();
+				
+				var closeBox = function(){
+					$('#box').bounceBoxHide();
+				};
+				var timerInt = setTimeout(closeBox, 10000);
+				
+				$('#box').hover(function(){
+					$(this).find(".close").show();
+					clearTimeout(timerInt);
+				}, function(){
+					$(this).find(".close").hide();
+					timerInt = setTimeout(closeBox, 10000);
+				});
+				
+				$("#box").find('.close').bind('click', function(e){
+					e.preventDefault();
+					closeBox();
+				});
+			}
+		});
+	</script>
+	<!-- /Bouncebox -->
+</head>
+<body class="full   ">
+
+<div id="fb-root"></div>
+<script>
+	window.fbAsyncInit = function() {
+		FB.init({
+		  appId      : '409788115723149', // App ID
+		  status     : true, // check login status
+		  cookie     : true, // enable cookies to allow the server to access the session
+		  xfbml      : true  // parse XFBML
+		});
+		
+		FB.Event.subscribe('auth.login', function(response) {
+			window.location.reload();
+		});
+
+	};
+
+	// Load the SDK Asynchronously
+	(function(d){
+	 var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+	 if (d.getElementById(id)) {return;}
+	 js = d.createElement('script'); js.id = id; js.async = true;
+	 js.src = "//connect.facebook.net/en_US/all.js";
+	 ref.parentNode.insertBefore(js, ref);
+	}(document));
+</script>	
+
+	
+	<div id="pageWrapper">
+		
+				
+	
+			<div id="loginContainer">
+			<div id="loginBoxShadow">
+				<div id="loginBox">
+					<div style="position: relative;">
+						<div id="pointy"><span></span></div>
+						<div id="closeIcon">
+							<img id="closePanel" src="http://cdn.filefactory.com/img/layout/h1closebtn.png" alt="Close Panel" />
+						</div>
+					</div>
+					
+					<h1 class="redHeading"><span>Member Sign In</span></h1>
+					
+					<div class="messageHolder">
+						<p id="socialMessage">Social Media Sign In</p>
+						<p id="ffMessage">FileFactory Sign In</p>
+					</div>
+					
+					<form name="quickLogin" action="" method="POST" style="margin: 0;">
+						<div id="socialButtonContainer">
+							<a href="javascript:void(0)" class="socialSignupButton facebook" id="social_facebook">
+								Sign in with <strong>Facebook</strong>
+							</a>
+							
+							<a href="javascript:void(0)" class="socialSignupButton google" id="social_google">
+								Connect with <strong>Google</strong>
+							</a>
+					
+							<a href="javascript:void(0)" class="socialSignupButton twitter" id="social_twitter">
+								Sign in with <strong>Twitter</strong>
+							</a>
+						</div>
+						<div id="loginFields">
+							<fieldset>
+								<input type="text" placeholder="What is your email address?" name="email" id="email" class="whiteInset " value="" />
+							</fieldset>
+							
+							<fieldset>
+								<input type="password" placeholder="What is your password?" name="password" id="password" class="whiteInset " value="" />
+							</fieldset>
+					
+							<button id="signinButton" type="submit" class="small green">Sign In</button>
+							
+							<a href="/member/reset.php">Problems? <br />Recover your account.</a>
+
+							<input type="hidden" name="redirect" value="/file/cc0a5b1/n/SimplePool.zip"/>
+							<input type="hidden" name="socialID" id="socialID" value=""/>
+							<input type="hidden" name="socialType" id="socialType" value="facebook"/>
+						</div>
+						
+					</form>
+					<div style="clear: both;"></div>
+
+									</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>	
+		
+	
+	
+	<!-- Page content -->
+	<header id="header">
+		<div id="our_sites">
+			<div class="site_wrapper">
+									<span style="color: #ff915d;">Announcing the new FileFactory Partner Program. Refer your friends and customers and earn 50% from all sales and 25% of all rebills.</span><a href="/affiliates/">Learn more.</a>
+							</div>
+		</div>
+		<div class="wrap">	
+			<hgroup id="logos">
+				<h1><a href="/">FileFactory</a></h1>
+			</hgroup>
+			
+										<nav id="navigation">
+					<ul>
+												
+						<!-- premium -->
+						<li class="top premium">
+							<a href="/premium/"><span>Premium</span></a>
+							<ul>
+																<li class="arrow"></li>
+								<li class="only"><a href="/premium/">Upgrade account</a></li>
+															</ul>
+						</li>
+						
+												
+						<li class="top tools">
+							<a href="/tool/"><span>Tools</span></a>
+							<ul>
+								<li class="arrow"></li>
+								<li class="first"><a href="/tool/links.php">Link Checker</a></li>
+								<li><a href="/tool/folder.php">Folder Widget</a></li>
+								<li><a href="/tool/refer.php">Tell a Friend</a></li>
+																<li class="last"><a href="/tool/buttons.php">Promotional Tools</a></li>
+							</ul>
+						</li>
+						
+						<li class="top help">
+							<a href="/help/"><span>Help</span></a>
+							<ul>
+								<li class="arrow"></li>
+								<li class="first hasMore">
+									<a href="/help/">Support</a>
+									<ul>
+										<li class="first"><a href="http://support.filefactory.com/" target="_blank">Support Center</a></li>
+										<li><a href="http://help.filefactory.com/support/tickets/new" target="_blank">Submit Ticket</a></li>
+										<li><a href="/member/forgotpass.php">Reset Password</a></li>
+										<li><a href="/diagnostic.php">Diagnostics</a></li>
+										<li class="last"><a href="/member/reset.php">Recover Lost Account</a></li>
+									</ul>
+								</li>
+								<li class="last hasMore">
+									<a href="/help/about.php">Information</a>
+									<ul>
+										<li class="first"><a href="/help/about.php">About Us</a></li>
+										<li><a href="/contact/contact.php">Contact Us</a></li>
+										<li><a href="/legal/terms.php">Terms of Service</a></li>
+	                                    <li><a href="/legal/acceptableusepolicy.php">Acceptable Use</a></li>
+	                                    <li><a href="/legal/privacy.php">Privacy Policy</a></li>
+	                                    <li><a href="/legal/fairusepolicy.php">Fair Use Policy</a></li>
+										<li class="last"><a href="/legal/dmca.php">Copyright Policy</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+						
+			<menu id="userMenu">
+								<a href="/member/signup.php"><strong>Sign Up</strong></a>
+				<a href="/member/login.php" id="quicksubmit">Sign In</a>
+							</menu>
+		</div>
+	</header>
+	
+	<div id="main" >
+		<div id="crumbtrail">
+									<a href="/" class="">Home</a>	
+												<span class="last">File Not Found</span>
+								</div>
+		<div id="content">		
+							<ul id="notifications">
+											<li class="blue alert">
+							<div class="message ">
+								<p>
+									Sorry, this file is no longer available. It may have been deleted by the uploader, or has expired.  This error is usually caused by requesting a file that does not exist.								</p>
+								
+															</div>
+						</li>
+											
+						<li id="notificationPointer" class="blue"></li>
+						
+										 
+					</ul>
+							
+			<div class="clear" style="margin-top: 50px;"></div>
+	<link rel="stylesheet" type="text/css" href="/css/ss-symbolicons-block.css?v=164506122012" />
+<section id="aboutIntro">
+	<h1>The best service to <strong> upload and share files</strong> with no limits since 2005</h1>
+	<article id="reasons" class="clearfix">		
+		<div class="backgroundLine"></div>
+		<div class="reason">
+			<div class="icon"><i class="ss-icon">barchart</i></div>
+			<h3>Unlimited</h3>
+			<div class="description">Your files can be downloaded an unlimited number of times by an unlimited number of people.</div>
+		</div>
+		<div class="reason">
+			<div class="icon"><i class="ss-icon">rocket</i></div>
+			<h3>Go Large</h3>
+			<div class="description">Send and receive any type of file up to a massive 2000MB with unlimited file bandwidth.</div>
+		</div>
+		<div class="reason">
+			<div class="icon"><i class="ss-icon">heartuser</i></div>
+			<h3>TrafficShare</h3>
+			<div class="description">Let your downloaders download with Premium speeds. 100GB free with any Premium account.</div>
+		</div>
+		<div class="reason">
+			<div class="icon"><i class="ss-icon">upload</i></div>
+			<h3>Filebox</h3>
+			<div class="description">Allow anyone to upload files to your account to review with your own customizable Filebox uploader.</div>
+		</div>
+	</article>
+	<div class="btnHolder">
+		<a class="button large green circle-arrow" href="/member/signup.php">
+			<span>
+				<i class="ss-icon">right</i>
+			</span>
+			Join Now!		</a>
+	</div>
+</section>
+<!-- section#aboutIntro -->
+<div id="unlimitedBannerFullWidth"></div>
+<section id="unlimitedBanner">
+	<div class="bannerImage"></div>
+</section>
+
+<!-- section#unlimitedBanner -->
+
+<section id="aboutFeatures">
+	<h2>Create an Account to Access These Awesome Features</h2>
+	<article class="features clearFix">
+		<div class="feature">
+			<div class="icon"><i class="ss-icon">lightning</i></div>
+			<h3>Resume Support</h3>
+			<div class="text">Premium users can speed up downloads and resume broken downloads using a large number of download managers.</div>
+		</div>
+		<div class="feature">
+			<div class="icon"><i class="ss-icon">flowchart</i></div>
+			<h3>Awesome Support</h3>
+			<div class="text">Our friendly support team are always on hand to help you out with any problems you may have.</div>
+		</div>
+		<div class="feature last">
+			<div class="icon"><i class="ss-icon">clock</i></div>
+			<h3>File Management</h3>
+			<div class="text">Our simple to use file manager lets you organise your files into folders, move files and email your links to your friends.</div>
+		</div>
+	</article>
+	<article class="features clearFix">
+		<div class="feature">
+			<div class="icon"><i class="ss-icon">refresh</i></div>
+			<h3>Fast Downloads</h3>
+			<div class="text">Download at lightning speeds with multiple simultaneous downloads. Free users have restricted low priority speeds.</div>
+		</div>
+		<div class="feature">
+			<div class="icon"><i class="ss-icon">exclamationchat</i></div>
+			<h3>Heaps of Storage</h3>
+			<div class="text">Premium users have a larger amount of storage, while free users have a hefty 50GB of storage space.</div>
+		</div>
+		<div class="feature last">
+			<div class="icon"><i class="ss-icon">list</i></div>
+			<h3>Files Live Forever</h3>
+			<div class="text">Premium user files are never deleted, but in order to free up disk space inactive files from free users are removed.</div>
+		</div>
+	</article>
+	<article class="features clearFix">
+		<div class="feature">
+			<div class="icon"><i class="ss-icon">up</i></div>
+			<h3>FTP Uploads</h3>
+			<div class="text">Premium users have the advantage of uploading large files through our FTP servers make big uploads easier.</div>
+		</div>
+		<div class="feature">
+			<div class="icon"><i class="ss-icon">lock</i></div>
+			<h3>Password Protection</h3>
+			<div class="text">Keep your files safe! Password protect files and folders easily.</div>
+		</div>
+		<div class="feature last">
+			<div class="icon"><i class="ss-icon">link</i></div>
+			<h3>Link Aliases</h3>
+			<div class="text">Generate time limited and download limited links for particular files.</div>
+		</div>
+	</article>
+	
+	
+<div id="fileDeliveryCounter" class="clearFix">
+	<p class="numCount" interval="90.909090909091">967577425</p>
+	<p class="descText">Files delivered successfully</p>
+</div>
+<!-- div#fileDeliveryCounter -->	
+		
+	<div class="btnHolder">
+		<a class="button large green circle-arrow" href="/member/signup.php">
+			<span>
+				<i class="ss-icon">right</i>
+			</span>
+							Join Now!
+					</a>
+	</div>	
+</section>
+<!-- section#featuresHolder -->
+	</div>
+</div>
+
+
+</div>
+
+<!-- div#pageWrapper -->
+
+<div id="footer">
+	<a href="/legal/terms.php">Terms of Service</a> -
+	<a href="/legal/acceptableusepolicy.php">Acceptable Use Policy</a> -
+	<a href="/legal/privacy.php">Privacy Policy</a> -
+	<a href="/legal/fairusepolicy.php">Fair Use Policy</a> -
+	<a href="/legal/dmca.php">Copyright Policy</a> -
+	<a href="/legal/exploitation.php">Child Exploitation Policy</a>
+	<p>
+        <a href="/help/sitemap.php">Site Map</a> -
+        <a href="/premium/">Premium</a> -
+        <a href="/reseller/">Resellers</a> -
+        <a href="/affiliates/">Affiliates</a> -
+        <a href="http://support.filefactory.com/">Support</a> |
+		        &copy; FileFactory 2005 - 2013 Gameworld Industries Limited.
+    </p>
+</div>
+
+<style type="text/css">
+	div#overlayBox { position: fixed; width: 100%; height: 500%; top: 0; left: 0; z-index: 1500; background: rgba(2, 27, 48, 0.8); }
+		div#overlayBox div#hoverBox { position: fixed; top: 50%; left: 50%; width: 600px; height: 200px; margin-top: -100px; margin-left: -300px; }
+			div#hoverBox div { display: block; color: #FFFFFF; text-align: center; }
+			div#hoverBox div i { font-size: 75px; }
+			div#hoverBox div h2 { color: #fff; font-size: 28px; font-weight: bold; line-height: 37px; }
+</style>
+<div id="overlayBox" style="display: none;">
+	<div id="hoverBox">
+		<div>
+			<i class="ss-icon">plus</i>
+			<h2>Drop Your Files to Upload</h2>
+		</div>
+	</div>
+</div>
+
+		<!-- Include all JS using the rel plugin -->
+		<script type="text/javascript" src="http://cdn.filefactory.com/js/jquery.js?v=164011072012"></script>
+		<script type="text/javascript" src="http://cdn.filefactory.com/js/jquery/jquery.easing.1.3.js?v=164011072012"></script>
+		<script type="text/javascript" src="http://cdn.filefactory.com/js/jquery/jquery.bouncebox.1.0.js?v=164011072012"></script>
+		<script type="text/javascript" src="http://cdn.filefactory.com/js/login.js?v=164011072012"></script>
+				<script type="text/javascript" src="http://cdn.filefactory.com/js/shared.js?v=164011072012"></script>
+				<script type="text/javascript" src="http://cdn.filefactory.com/js/locale/en_US.js?v=164011072012"></script>
+				<script type="text/javascript" src="http://cdn.filefactory.com/js/file.js?v=164011072012"></script>
+				<script type="text/javascript" src="http://cdn.filefactory.com/js/new/jquery/jquery.apprise-v2.min.js?v=164011072012"></script>
+				<script type="text/javascript" src="http://cdn.filefactory.com/js/clipboard/ZeroClipboard.min.js?v=164011072012"></script>
+				<script type="text/javascript" src="http://cdn.filefactory.com/js/new/downloadticker.js?v=164011072012"></script>
+				
+					<!-- Temp Promo -->
+			<link rel="stylesheet" type="text/css" href="http://cdn.filefactory.com/css/facebox.css?v=164011072012" />
+			<style type="text/css">
+				div#joinBox { background: url(http://cdn.filefactory.com/img/join.promo.png) top left no-repeat; width: 740px; height: 540px; cursor: pointer; }
+				div#joinBox a#joinLater { position: absolute; top: 0; left: 0; height: 60px; width: 230px; margin: 472px 0 0 254px; z-index: 5; }
+			</style>
+			<script type="text/javascript" src="http://cdn.filefactory.com/js/jquery/jquery.facebox.js?v=164011072012"></script>
+			<script type="text/javascript">				
+				loadFaceBox = function(){
+					if($.cookie("FF_JoinPromo") != 'true')
+					{
+						$.facebox({ ajax : '/common/modal.join.php' }, 'join-promo');
+					}
+					
+					// Stop the modal closing when the overlay is clicked
+					$(document).find("#facebox_overlay").unbind("click");
+				};
+				
+				$(function(){
+					setTimeout(function(){loadFaceBox();}, 10000);
+				});
+				
+			</script>
+			<!-- /Temp Promo-->
+				
+			
+    
+        				
+		
+		
+			<!-- Google Analytics -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-928645-2']);
+	_gaq.push(['_trackPageview']);
+	
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
+	<!-- End Google Analytics -->
+		
+	<!-- Start of StatCounter Code - All FF -->
+	<script type="text/javascript">
+		var sc_project=872265; 
+		var sc_invisible=1; 
+		var sc_security="d25aa3f1"; 
+		var sc_https=1; 
+		var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
+		document.write("<sc"+"ript type='text/javascript' src='" + scJsHost + "statcounter.com/counter/counter.js'></"+"script>");</script>
+	<noscript><div class="statcounter"><a title="drupal stats" href="http://statcounter.com/drupal/" target="_blank">
+	<img class="statcounter" src="https://c.statcounter.com/872265/0/d25aa3f1/1/" alt="drupal stats"></a></div></noscript>
+	<!-- End of StatCounter Code - All FF-->
+		
+	
+		
+	<script type="text/javascript">
+		//console workaround for older browsers
+		if(!window.console){ window.console = {log : function(){}}; }
+	</script>
+	<script src="http://cdn.filefactory.com/common/webfonts/ss-symbolicons.js"></script>
+</body>
+</html>
