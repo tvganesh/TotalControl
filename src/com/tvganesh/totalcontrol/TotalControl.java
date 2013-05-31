@@ -300,9 +300,9 @@ public class TotalControl extends SimpleBaseGameActivity implements IAcceleratio
                                              Gravity.CENTER_HORIZONTAL|Gravity.BOTTOM);
 
         // REQUEST an ad (Test ad) //
-        /*AdRequest adRequest = new AdRequest();
-        adRequest.addTestDevice("41000003e4583000");
-        adView.loadAd(adRequest);*/
+        AdRequest adRequest = new AdRequest();
+        //adRequest.addTestDevice("41000003e4583000");
+        adView.loadAd(adRequest);
 
         // RENDER the add on top of the scene //
         this.mRenderSurfaceView = new RenderSurfaceView(this);
