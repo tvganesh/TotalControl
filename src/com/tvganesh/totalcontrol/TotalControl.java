@@ -29,6 +29,7 @@ import org.andengine.opengl.texture.region.TextureRegion;
 import org.andengine.opengl.vbo.VertexBufferObjectManager;
 import org.andengine.opengl.view.RenderSurfaceView;
 import org.andengine.ui.activity.SimpleBaseGameActivity;
+import org.andengine.util.HorizontalAlign;
 
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Body;
@@ -42,6 +43,7 @@ import com.google.ads.AdView;
 
 
 import org.andengine.entity.text.Text;
+import org.andengine.entity.text.TextOptions;
 import org.andengine.opengl.font.Font;
 import org.andengine.opengl.font.FontFactory;
 
@@ -66,12 +68,13 @@ public class TotalControl extends SimpleBaseGameActivity implements IAcceleratio
 	private TextureRegion mBlackBallTextureRegion,mBlueBallTextureRegion;
 	private TextureRegion mPurpleBallTextureRegion,mGreenBallTextureRegion;
 	private TextureRegion mBallTextureRegion;
-	private TextureRegion mBrickTextureRegion;
     private static FixtureDef FIXTURE_DEF = PhysicsFactory.createFixtureDef(50f, 0.0f, 0.5f);
     
-    Sprite blackBall, blueBall, purpleBall, greenBall;
+    Sprite blackBall, blueBall, purpleBall, greenBall, orangeBall;
     AdView adView;
 
+    private Font mFont;
+    static Text bText;
     
 	public EngineOptions onCreateEngineOptions() {
 		
@@ -98,6 +101,8 @@ public class TotalControl extends SimpleBaseGameActivity implements IAcceleratio
 		this.mGreenBallTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(this.mBitmapTextureAtlas, this, "ball_green.png",62, 62);
 		this.mBitmapTextureAtlas.load();
 		
+		this.mFont = FontFactory.create(this.getFontManager(), this.getTextureManager(), 256, 256, Typeface.create(Typeface.SANS_SERIF, Typeface.NORMAL), 20);
+		this.mFont.load();
 	
 		
 		this.enableAccelerationSensor(this);
@@ -113,6 +118,16 @@ public class TotalControl extends SimpleBaseGameActivity implements IAcceleratio
 		this.mScene.setBackground(new Background(0.09804f, 0.6274f, 0.8784f));
 		
 		this.mPhysicsWorld = new PhysicsWorld(new Vector2(0, SensorManager.GRAVITY_EARTH), false);
+		
+		// Add rules for the game
+		bText = new Text(10, 10, this.mFont, "Move all the balls to the", new TextOptions(HorizontalAlign.CENTER), this.getVertexBufferObjectManager());
+		mScene.attachChild(bText);
+		
+		bText = new Text(10, 32, this.mFont, "innermost circle by", new TextOptions(HorizontalAlign.CENTER), this.getVertexBufferObjectManager());
+		mScene.attachChild(bText);
+		
+		bText = new Text(10, 54, this.mFont, "tilting or shaking.", new TextOptions(HorizontalAlign.CENTER), this.getVertexBufferObjectManager());
+		mScene.attachChild(bText);
 		
 		// Create a Maze scene
 		this.initGame(mScene);
@@ -168,6 +183,8 @@ public class TotalControl extends SimpleBaseGameActivity implements IAcceleratio
 		purpleBallBody = PhysicsFactory.createBoxBody(this.mPhysicsWorld, purpleBall, BodyType.DynamicBody, gameFixtureDef);
 		this.mPhysicsWorld.registerPhysicsConnector(new PhysicsConnector(purpleBall, purpleBallBody, true, true));
 		this.mScene.attachChild(purpleBall);
+		
+		
 		
 		// Create the maze using small bodies (200) placed in a circle
 		int MAXBODIES = 200;
